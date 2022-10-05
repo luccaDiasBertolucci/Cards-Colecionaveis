@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #434343;
+
+  font-size: 16px;
+}
+
+main.cardscolecionaveis {
+  display: flex;
+  padding: 32px;
+}
+
+main.cardscolecionaveis section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+}
+
+main.cardscolecionaveis section.card:first-child {
+  margin-left: 0;
+}
+
+main.cardscolecionaveis section.card .icon {
+  width: 64px;
+  height: 64px;
+}
+
+main.cardscolecionaveis section.card img {
+  width: 100%;
+}
+
+main.cardscolecionaveis section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+main.cacardscolecionaveisds section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+main.cardscolecionaveis section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+main.cardscolecionaveis section.card.faleconosco button {
+  background: green;
+}
+main.cardscolecionaveis section.card.compreaqui button {
+  background: blue;
+}
+main.cardscolecionaveis section.card.Sobre button {
+  background: orange;
+}
+main.cardscolecionaveis section.card.Quemsomos button {
+  background: red;
+}
+
+@media screen and (max-width: 720px) {
+  main.cardscolecionaveis {
+    flex-direction: column;
+  }
+
+  main.cardscolecionaveis section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  main.cardscolecionaveis section.card:last-child {
+    margin-bottom: 0;
+  }
+
+  main.cardscolecionaveis section.card button {
+    font-size: 70%;
+  }
+}
